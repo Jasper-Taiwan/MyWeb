@@ -3,21 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>website of Jasper Chang</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="css/all.css" rel="stylesheet"> <!--load all styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 設定viewport -->
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link href="css/all.css" rel="stylesheet"> <!--load icons all styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!--套用字型Ｍontserrat -->
 </head>
 <body>
   <!-- Header -->
 
   <header id="header">
     <div class="container">
+      
       <nav>
         <div id="logo">
           <a href="">
             <img src="images/logo2.jpg" alt="logo">
           </a>
         </div>
+        
+        <button type="button" class="nav-button">
+          三
+        </button> 
+        <input type="checkbox" class="nav-button-checkbox">  <!-- RWD單元加入 (講義名稱為menu-button)-->
+
         <ul class="nav">
           <li><a href="#home">home</a></li>
           <li><a href="#about">about</a></li>
