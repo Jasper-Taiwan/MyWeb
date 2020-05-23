@@ -459,13 +459,74 @@ footer {
 }
 
 
+/*=============11. RWD  =================*/
+
+@media screen and (min-width: 1024px) {
+
+  /*
+    電腦版的 css 都寫在這邊
+  */   
+
+  .nav-button, .nav-button-checkbox {
+    display: none;
+  }
+}
 
 
 
+@media screen and (max-width: 1023px) {
+  
+  /*
+    手機版的 css 都寫在這邊
+  */   
+
+  .container {
+    width: auto;
+  }
+
+  .nav-button {
+    float: right;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    background: transparent;
+    padding: 0 15px;
+    border: 0;
+  }
+
+  .nav-button-checkbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 40px;
+    margin: 0;
+    opacity: 0; /*讓checkbox變透明*/
+  }
+
+  .nav-button-checkbox:checked ~ .nav {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    margin-top: 0;
+    padding-left: 0;
+    position: fixed;
+    text-align: center;
+    right: 0;
+    top: 40px;
+    width: 85px;
+    height: 100%;
+  }
+
+  .nav li {
+    width: 100%;
+    background: #222;
+  }
 
 
-
-
+}
 
 
 
